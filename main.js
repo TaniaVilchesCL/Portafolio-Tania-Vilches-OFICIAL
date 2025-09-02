@@ -6,6 +6,7 @@ modoBtn.addEventListener("click", () => {
 });
 
 
+
 const idiomaBtn = document.getElementById('idioma-btn');
 
 idiomaBtn.addEventListener('click', () => {
