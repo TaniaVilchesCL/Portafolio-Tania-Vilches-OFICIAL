@@ -615,3 +615,76 @@ nav.active {
   display: flex;
   flex-direction: column;
 }
+
+/* Botón hamburguesa visible solo en móvil */
+.menu-toggle {
+  display: none; /* oculto por defecto */
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  z-index: 1100;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+/* Mostrar botón hamburguesa en pantallas pequeñas */
+@media (max-width: 995px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: fixed;
+    top: 60px; /* justo debajo del header */
+    right: 1.5rem;
+    width: 200px;
+    background-color: rgb(19, 19, 20);
+    border-left: 3px solid rgb(111, 201, 99);
+    border-bottom: 3px solid rgb(111, 201, 99);
+    border-bottom-left-radius: 2rem;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    z-index: 1050;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    display: block;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    border-bottom: none;
+  }
+
+  nav a:hover,
+  nav a:active {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid rgb(111, 201, 99);
+  }
+}
+
+/* En pantallas grandes, mostrar nav y ocultar botón */
+@media (min-width: 996px) {
+  nav {
+    display: flex !important;
+    position: static !important;
+    width: auto !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    flex-direction: row !important;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
