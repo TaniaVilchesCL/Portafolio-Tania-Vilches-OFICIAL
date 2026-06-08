@@ -1,156 +1,339 @@
-<html>
-  <head>        
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="estilo.css">
-    <title>Tania Vilches</title>
-    
-    <style>
-      html {
-        font-size: 70%;
-        scroll-behavior: smooth; 
-      }
-
-      section {
-        min-height: 100vh;
-        padding: 5rem 9% 5rem;
-        scroll-margin-top: 100px; 
-      }
-    </style>
-  </head>
-  <body>
-
-    <header>
-      <a href="#home" class="logo">Tania Vilches</a>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
-        <i class="fa fa-bars"></i>
-      </button>
-      <nav id="nav-menu">
-        <a href="#home" class="active">Home</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-      <div class="opciones">
-        <button id="modo-btn">🌙</button>
-        <button id="idioma-btn">EN</button>
-      </div>
-      
-    </header>
-
-
-    <section id="home" class="home">
-      <div class="home-img">
-        <img src="imagenes/IMG_9282.jpeg" alt="">
-      </div>
-      <div class="home-contenido">
-        <h1>Hola, soy <span>Tania Vilches</span></h1>
-        <h3>Analista Programadora</h3>
-        <div class="iconos-redessociales">
-          <a href="https://cl.linkedin.com/in/tania-vilches-fuentes-6577032b0?trk=people-guest_people_search-card"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/99milo"><i class="fa-brands fa-github"></i></a>
-        </div>
-        <a href="#contacto" class="boton">Contratar</a> 
-      </div>
-    </section>
-
-
-    <section id="servicios" class="servicios">
-      <h2>Servicios</h2>
-      <div class="lista-servicios">
-        <div class="servicio">
-          <i class="fa-solid fa-code"></i>
-          <h3>Desarrollo Web</h3>
-          <p>Creación de sitios web responsivos con HTML, CSS y JavaScript, optimizados para todos los dispositivos.</p>
-        </div>
-        
-        <div class="servicio">
-          <i class="fa-solid fa-database"></i>
-          <h3>Base de Datos</h3>
-          <p>Diseño y gestión de bases de datos eficientes en MongoDB y MySQL para sistemas modernos.</p>
-        </div>
-        
-        <div class="servicio">
-          <i class="fa-solid fa-shield-halved"></i>
-          <h3>Seguridad Informática</h3>
-          <p>Análisis de vulnerabilidades y propuestas de mitigación para proyectos web pequeños o medianos.</p>
-        </div>
-
-        <div class="servicio">
-          <i class="fa-solid fa-paintbrush"></i>
-          <h3>Diseño Creativo</h3>
-          <p>Ilustraciones digitales y material visual personalizado para proyectos, portafolios o redes.</p>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="experiencia" class="experiencia">
-      <h2>Experiencia</h2>
-      <div class="galeria-proyectos">
-
-        
-        <a href="https://99milo.github.io/pomodoro-proyect" class="proyecto" target="_blank">
-          <img src="imagenes/pomodoro.png" alt="Preview Proyecto 1">
-          <div class="info-proyecto">
-            <p>Estudio con Pomodoro</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Tania Vilches</title>
+  <style>
+    html {
+      font-size: 70%;
+      scroll-behavior: smooth;
+    }
+    section {
+      min-height: 100vh;
+      padding: 5rem 9% 5rem;
+      scroll-margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+ 
+<header>
+  <a href="#home" class="logo">Tania Vilches</a>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+    <i class="fa fa-bars"></i>
+  </button>
+  <nav id="nav-menu">
+    <a href="#home" class="active" data-es="Inicio" data-en="Home">Inicio</a>
+    <a href="#sobre-mi" data-es="Sobre mí" data-en="About me">Sobre mí</a>
+    <a href="#servicios" data-es="Servicios" data-en="Services">Servicios</a>
+    <a href="#experiencia" data-es="Experiencia" data-en="Experience">Experiencia</a>
+    <a href="#habilidades" data-es="Habilidades" data-en="Skills">Habilidades</a>
+    <a href="#idiomas" data-es="Idiomas" data-en="Languages">Idiomas</a>
+    <a href="#certificaciones" data-es="Certificaciones" data-en="Certifications">Certificaciones</a>
+    <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+  </nav>
+  <div class="opciones">
+    <button id="modo-btn" aria-label="Cambiar modo">🌙</button>
+    <button id="idioma-btn" aria-label="Cambiar idioma">EN</button>
+  </div>
+</header>
+ 
+<!-- HOME -->
+<section id="home" class="home">
+  <div class="home-img">
+    <img src="imagenes/IMG_9282.jpeg" alt="Foto de Tania Vilches">
+  </div>
+  <div class="home-contenido">
+    <h1 data-es="Hola, soy <span>Tania Vilches</span>" data-en="Hi, I'm <span>Tania Vilches</span>">Hola, soy <span>Tania Vilches</span></h1>
+    <h3 data-es="Analista Programadora" data-en="Software Developer">Analista Programadora</h3>
+    <div class="iconos-redessociales">
+      <a href="https://cl.linkedin.com/in/tania-vilches-fuentes-6577032b0" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/TaniaVilchesCL" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <a href="#contacto" class="boton" data-es="Contratar" data-en="Hire me">Contratar</a>
+  </div>
+</section>
+ 
+<!-- SOBRE MÍ -->
+<section id="sobre-mi" class="sobre-mi">
+  <h2 data-es="Sobre mí" data-en="About me">Sobre mí</h2>
+  <div class="sobre-mi-contenido">
+    <p data-es="Analista Programadora con experiencia en DevOps y Cloud. He automatizado procesos con Terraform y GCP, desarrollado pipelines CI/CD con GitHub Actions y optimizado costos en la nube. Trabajo con Python, HTML, JS y Java, y me apasiona crear soluciones tecnológicas con impacto real. Cuento con inglés avanzado (IELTS) y un enfoque constante en aprendizaje en entornos STEAM." data-en="Software developer with experience in DevOps and Cloud. I have automated processes using Terraform and GCP, built CI/CD pipelines with GitHub Actions, and optimized cloud costs. I work with Python, HTML, JS and Java, and I'm passionate about creating technology solutions with real impact. I have advanced English (IELTS) and a continuous focus on learning in STEAM environments.">
+      Analista Programadora con experiencia en DevOps y Cloud. He automatizado procesos con Terraform y GCP, desarrollado pipelines CI/CD con GitHub Actions y optimizado costos en la nube. Trabajo con Python, HTML, JS y Java, y me apasiona crear soluciones tecnológicas con impacto real. Cuento con inglés avanzado (IELTS) y un enfoque constante en aprendizaje en entornos STEAM.
+    </p>
+    <div class="sobre-mi-tags">
+      <span class="tag-skill">Python</span>
+      <span class="tag-skill">GCP</span>
+      <span class="tag-skill">Terraform</span>
+      <span class="tag-skill">CI/CD</span>
+      <span class="tag-skill">Flask</span>
+      <span class="tag-skill">Django</span>
+      <span class="tag-skill">HTML</span>
+      <span class="tag-skill">JavaScript</span>
+    </div>
+  </div>
+</section>
+ 
+<!-- SERVICIOS -->
+<section id="servicios" class="servicios">
+  <h2 data-es="Servicios" data-en="Services">Servicios</h2>
+  <div class="lista-servicios">
+    <div class="servicio">
+      <i class="fa-solid fa-code"></i>
+      <h3 data-es="Desarrollo Web" data-en="Web Development">Desarrollo Web</h3>
+      <p data-es="Creación de sitios web responsivos con HTML, CSS y JavaScript, optimizados para todos los dispositivos." data-en="Creation of responsive websites with HTML, CSS and JavaScript, optimized for all devices.">Creación de sitios web responsivos con HTML, CSS y JavaScript, optimizados para todos los dispositivos.</p>
+    </div>
+    <div class="servicio">
+      <i class="fa-solid fa-database"></i>
+      <h3 data-es="Base de Datos" data-en="Databases">Base de Datos</h3>
+      <p data-es="Diseño y gestión de bases de datos eficientes en MongoDB y MySQL para sistemas modernos." data-en="Design and management of efficient databases in MongoDB and MySQL for modern systems.">Diseño y gestión de bases de datos eficientes en MongoDB y MySQL para sistemas modernos.</p>
+    </div>
+    <div class="servicio">
+      <i class="fa-solid fa-cloud"></i>
+      <h3 data-es="Cloud & DevOps" data-en="Cloud & DevOps">Cloud & DevOps</h3>
+      <p data-es="Automatización de infraestructura con Terraform y GCP, pipelines CI/CD y optimización de costos en la nube." data-en="Infrastructure automation with Terraform and GCP, CI/CD pipelines and cloud cost optimization.">Automatización de infraestructura con Terraform y GCP, pipelines CI/CD y optimización de costos en la nube.</p>
+    </div>
+    <div class="servicio">
+      <i class="fa-solid fa-paintbrush"></i>
+      <h3 data-es="Diseño Creativo" data-en="Creative Design">Diseño Creativo</h3>
+      <p data-es="Ilustraciones digitales y diseño UX/UI personalizado para proyectos, portafolios o redes." data-en="Digital illustrations and custom UX/UI design for projects, portfolios or social media.">Ilustraciones digitales y diseño UX/UI personalizado para proyectos, portafolios o redes.</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- EXPERIENCIA -->
+<section id="experiencia" class="experiencia">
+  <h2 data-es="Experiencia" data-en="Experience">Experiencia</h2>
+ 
+  <div class="timeline">
+ 
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fa-solid fa-building"></i></div>
+      <div class="timeline-contenido">
+        <div class="timeline-header">
+          <div>
+            <h3 data-es="DevOps / Desarrollo" data-en="DevOps / Development">DevOps / Desarrollo</h3>
+            <span class="timeline-org">AFP Capital</span>
           </div>
-        </a>
-
-        
-        <a href="https://cadmium-j4w7.onrender.com" class="proyecto" target="_blank">
-          <img src="imagenes/proyecto2.jpg" alt="Preview Cadmium">
-          <div class="info-proyecto">
-            <p>Cadmium Nescafé</p>
+          <span class="timeline-tag" data-es="Trabajo" data-en="Job">Trabajo</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li data-es="Automatización de infraestructura con Terraform en GCP" data-en="Infrastructure automation with Terraform on GCP">Automatización de infraestructura con Terraform en GCP</li>
+          <li data-es="Desarrollo y optimización de pipelines CI/CD con GitHub Actions" data-en="Development and optimization of CI/CD pipelines with GitHub Actions">Desarrollo y optimización de pipelines CI/CD con GitHub Actions</li>
+          <li data-es="Optimización de costos en Google Cloud Platform" data-en="Google Cloud Platform cost optimization">Optimización de costos en Google Cloud Platform</li>
+          <li data-es="Gestión de tickets en ServiceNow" data-en="Ticket management in ServiceNow">Gestión de tickets en ServiceNow</li>
+        </ul>
+      </div>
+    </div>
+ 
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fa-solid fa-laptop-code"></i></div>
+      <div class="timeline-contenido">
+        <div class="timeline-header">
+          <div>
+            <h3 data-es="Páginas web comisionadas" data-en="Commissioned websites">Páginas web comisionadas</h3>
+            <span class="timeline-org">Fiverr</span>
           </div>
-        </a>
-
-        
-
+          <span class="timeline-tag" data-es="Freelance" data-en="Freelance">Freelance</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li data-es="Diseño UX/UI personalizado adaptado a la identidad del cliente" data-en="Custom UX/UI design tailored to client identity">Diseño UX/UI personalizado adaptado a la identidad del cliente</li>
+          <li data-es="Desarrollo front-end y back-end según requerimientos del proyecto" data-en="Front-end and back-end development per project requirements">Desarrollo front-end y back-end según requerimientos del proyecto</li>
+        </ul>
       </div>
-    </section>
-
-
-
-    <section class="habilidades" id="habilidades">
-      <h2>Mis Habilidades</h2>
-      <div class="galeria-habilidades">
-        <img src="imagenes/python.png" alt="Habilidad 1">
-        <img src="imagenes/js.png" alt="Habilidad 2">
-        <img src="imagenes/html.png" alt="Habilidad 3">
-        <img src="imagenes/css.png" alt="Habilidad 4">
-        <img src="imagenes/boostrap.png" alt="Habilidad 5">
-        <img src="imagenes/mysql.png" alt="Habilidad 6">
-        <img src="imagenes/react.png" alt="Habilidad 7">
-        <img src="imagenes/Lua.png" alt="Habilidad 8">
+    </div>
+ 
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fa-solid fa-train-subway"></i></div>
+      <div class="timeline-contenido">
+        <div class="timeline-header">
+          <div>
+            <h3 data-es="Asistente de Servicio" data-en="Service Assistant">Asistente de Servicio</h3>
+            <span class="timeline-org">Metro de Santiago</span>
+          </div>
+          <span class="timeline-tag" data-es="Trabajo" data-en="Job">Trabajo</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li data-es="Atención al cliente y resolución rápida de problemas" data-en="Customer service and fast problem resolution">Atención al cliente y resolución rápida de problemas</li>
+          <li data-es="Manejo de situaciones críticas y primeros auxilios" data-en="Management of critical situations and first aid">Manejo de situaciones críticas y primeros auxilios</li>
+        </ul>
       </div>
-    </section>
-
-    <section id="contacto" class="contacto">
-      <h2 id="contactame-titulo" class="contactame-titulo">Contáctame</h2>
-      <form action="https://formspree.io/f/xldlljje" method="POST" class="formulario-contacto">
-        <div class="campo">
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    </div>
+ 
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fa-solid fa-robot"></i></div>
+      <div class="timeline-contenido">
+        <div class="timeline-header">
+          <div>
+            <h3 data-es="Voluntaria – Mentoría STEAM" data-en="Volunteer – STEAM Mentorship">Voluntaria – Mentoría STEAM</h3>
+            <span class="timeline-org">First Global Chile</span>
+          </div>
+          <span class="timeline-tag" data-es="Voluntariado" data-en="Volunteer">Voluntariado</span>
         </div>
-
-        <div class="campo">
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" placeholder="tucorreo@email.com" required>
-        </div>
-
-        <div class="campo">
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-        </div>
-
-        <button type="submit" class="boton">Enviar mensaje</button>
-      </form>
-    </section>
-    <script src="main.js"></script>
-
-  </body>
+        <ul class="timeline-bullets">
+          <li data-es="Mentoría en electrónica, programación y robótica a adolescentes" data-en="Mentorship in electronics, programming and robotics for teenagers">Mentoría en electrónica, programación y robótica a adolescentes</li>
+          <li data-es="Capacitada para seleccionar al equipo representante de Chile 2025" data-en="Trained to select the Chilean representative team for 2025">Capacitada para seleccionar al equipo representante de Chile 2025</li>
+        </ul>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <!-- Proyectos -->
+  <h2 class="proyectos-titulo" data-es="Proyectos" data-en="Projects">Proyectos</h2>
+  <div class="galeria-proyectos">
+    <a href="https://99milo.github.io/pomodoro-proyect" class="proyecto" target="_blank">
+      <img src="imagenes/pomodoro.png" alt="Preview Proyecto Pomodoro">
+      <div class="info-proyecto">
+        <p data-es="Estudio con Pomodoro" data-en="Study with Pomodoro">Estudio con Pomodoro</p>
+      </div>
+    </a>
+    <a href="https://cadmium-j4w7.onrender.com" class="proyecto" target="_blank">
+      <img src="imagenes/proyecto2.jpg" alt="Preview Cadmium">
+      <div class="info-proyecto">
+        <p>Cadmium Nescafé</p>
+      </div>
+    </a>
+  </div>
+</section>
+ 
+<!-- HABILIDADES -->
+<section class="habilidades" id="habilidades">
+  <h2 data-es="Mis Habilidades" data-en="My Skills">Mis Habilidades</h2>
+  <div class="galeria-habilidades">
+    <img src="imagenes/python.png" alt="Python">
+    <img src="imagenes/js.png" alt="JavaScript">
+    <img src="imagenes/html.png" alt="HTML">
+    <img src="imagenes/css.png" alt="CSS">
+    <img src="imagenes/boostrap.png" alt="Bootstrap">
+    <img src="imagenes/mysql.png" alt="MySQL">
+    <img src="imagenes/react.png" alt="React">
+    <img src="imagenes/Lua.png" alt="Lua">
+  </div>
+</section>
+ 
+<!-- IDIOMAS -->
+<section id="idiomas" class="idiomas">
+  <h2 data-es="Idiomas" data-en="Languages">Idiomas</h2>
+  <div class="idiomas-grid">
+ 
+    <div class="idioma-card">
+      <div class="idioma-icon"><i class="fa-solid fa-comment"></i></div>
+      <h3 data-es="Español" data-en="Spanish">Español</h3>
+      <p class="idioma-nivel" data-es="Nativo" data-en="Native">Nativo</p>
+      <div class="idioma-barra-bg">
+        <div class="idioma-barra-fill" style="width: 100%;"></div>
+      </div>
+    </div>
+ 
+    <div class="idioma-card">
+      <div class="idioma-icon"><i class="fa-solid fa-comment"></i></div>
+      <h3 data-es="Inglés" data-en="English">Inglés</h3>
+      <p class="idioma-nivel" data-es="Avanzado · IELTS" data-en="Advanced · IELTS">Avanzado · IELTS</p>
+      <div class="idioma-barra-bg">
+        <div class="idioma-barra-fill" style="width: 80%;"></div>
+      </div>
+    </div>
+ 
+    <div class="idioma-card">
+      <div class="idioma-icon"><i class="fa-solid fa-comment"></i></div>
+      <h3 data-es="Portugués" data-en="Portuguese">Portugués</h3>
+      <p class="idioma-nivel" data-es="Básico" data-en="Basic">Básico</p>
+      <div class="idioma-barra-bg">
+        <div class="idioma-barra-fill" style="width: 30%;"></div>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+<!-- CERTIFICACIONES -->
+<section id="certificaciones" class="certificaciones">
+  <h2 data-es="Certificaciones" data-en="Certifications">Certificaciones</h2>
+  <div class="cert-grid">
+ 
+    <div class="cert-card">
+      <div class="cert-icon"><i class="fa-brands fa-google"></i></div>
+      <div class="cert-info">
+        <h3 data-es="Introduction to Generative AI" data-en="Introduction to Generative AI">Introduction to Generative AI</h3>
+        <p>Google Cloud Skills Boost</p>
+      </div>
+    </div>
+ 
+    <div class="cert-card">
+      <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+      <div class="cert-info">
+        <h3>CS50: Introduction to Computer Science</h3>
+        <p>Harvard University</p>
+      </div>
+    </div>
+ 
+    <div class="cert-card">
+      <div class="cert-icon"><i class="fa-solid fa-microchip"></i></div>
+      <div class="cert-info">
+        <h3 data-es="IoT" data-en="IoT">IoT</h3>
+        <p>Santander Open Academy</p>
+      </div>
+    </div>
+ 
+    <div class="cert-card">
+      <div class="cert-icon"><i class="fa-solid fa-table"></i></div>
+      <div class="cert-info">
+        <h3 data-es="Excel Intermedio" data-en="Intermediate Excel">Excel Intermedio</h3>
+        <p>Santander Open Academy</p>
+      </div>
+    </div>
+ 
+    <div class="cert-card">
+      <div class="cert-icon"><i class="fa-solid fa-bullhorn"></i></div>
+      <div class="cert-info">
+        <h3 data-es="Técnicas de Marketing Digital" data-en="Digital Marketing Techniques">Técnicas de Marketing Digital</h3>
+        <p>Teleduc UC</p>
+      </div>
+    </div>
+ 
+    <div class="cert-card">
+      <div class="cert-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+      <div class="cert-info">
+        <h3 data-es="Primeros Auxilios" data-en="First Aid">Primeros Auxilios</h3>
+        <p>Mutual de Seguridad</p>
+      </div>
+    </div>
+ 
+    <div class="cert-card">
+      <div class="cert-icon"><i class="fa-solid fa-code"></i></div>
+      <div class="cert-info">
+        <h3 data-es="Desarrollador Full Stack" data-en="Full Stack Developer">Desarrollador Full Stack</h3>
+        <p>INACAP</p>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+<!-- CONTACTO -->
+<section id="contacto" class="contacto">
+  <h2 id="contactame-titulo" class="contactame-titulo" data-es="Contáctame" data-en="Contact me">Contáctame</h2>
+  <form action="https://formspree.io/f/xldlljje" method="POST" class="formulario-contacto">
+    <div class="campo">
+      <label for="nombre" data-es="Nombre" data-en="Name">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    </div>
+    <div class="campo">
+      <label for="email" data-es="Correo electrónico" data-en="Email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="tucorreo@email.com" required>
+    </div>
+    <div class="campo">
+      <label for="mensaje" data-es="Mensaje" data-en="Message">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    </div>
+    <button type="submit" class="boton" data-es="Enviar mensaje" data-en="Send message">Enviar mensaje</button>
+  </form>
+</section>
+ 
+<script src="main.js"></script>
+</body>
 </html>
