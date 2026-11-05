@@ -6,7 +6,7 @@
 
 Infraestructura como código, pipelines CI/CD y automatización en la nube, desde Santiago de Chile.
 
-[![Ver portafolio](https://img.shields.io/badge/🌐_Ver_portafolio_en_vivo-4ea8ff?style=for-the-badge&labelColor=0b1220)](https://TU-PROYECTO.pages.dev)
+[![Ver portafolio](https://img.shields.io/badge/🌐_Ver_portafolio_en_vivo-4ea8ff?style=for-the-badge&labelColor=0b1220)](https://portafolio-tania-vilches-oficial.pages.dev/?utm_source=chatgpt.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white)](https://cl.linkedin.com/in/tania-vilches-fuentes-6577032b0)
 
 <br>
@@ -25,7 +25,7 @@ Infraestructura como código, pipelines CI/CD y automatización en la nube, desd
 
 Este es mi portafolio profesional: un sitio rápido, bilingüe y accesible donde reúno mi experiencia en **DevOps y Cloud**, mis habilidades, mi formación y un formulario de contacto que funciona de verdad.
 
-👉 **Míralo en vivo: [https://TU-PROYECTO.pages.dev](https://TU-PROYECTO.pages.dev)**
+👉 **Míralo en vivo: [https://TU-PROYECTO.pages.dev]([https://TU-PROYECTO.pages.dev](https://portafolio-tania-vilches-oficial.pages.dev/?utm_source=chatgpt.com))**
 
 ## 🚀 Características
 
