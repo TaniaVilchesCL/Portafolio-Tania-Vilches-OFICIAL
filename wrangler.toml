@@ -3,6 +3,6 @@ compatibility_date = "2025-01-01"
 pages_build_output_dir = "public"
 
 [[d1_databases]]
-binding = "portafolio_db"
+binding = "DB"
 database_name = "portafolio-db"
 database_id = "a93fd401-209d-43ed-b2a8-c6cb270fb669"
