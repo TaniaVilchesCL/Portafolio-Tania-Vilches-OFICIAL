@@ -1,0 +1,136 @@
+{
+  "name": "Tania Vilches Fuentes",
+  "title": { "es": "DevOps | Analista Programadora", "en": "DevOps | Software Developer" },
+  "location": "Santiago, Chile",
+  "links": {
+    "email": "tania.vilches.tr@gmail.com",
+    "linkedin": "https://cl.linkedin.com/in/tania-vilches-fuentes-6577032b0",
+    "github": "https://github.com/TaniaVilchesCL"
+  },
+  "summary": {
+    "es": "Analista Programadora con experiencia en DevOps y Cloud, con práctica en automatización de infraestructura con Terraform y GCP. He colaborado con equipos técnicos de BCI en revisiones pre-release de pipelines y trabajado con GitHub Actions, SOAtest y DBeaver.",
+    "en": "Software developer with DevOps and Cloud experience, hands-on with infrastructure automation using Terraform and GCP. I have worked with BCI technical teams on pre-release pipeline reviews and with GitHub Actions, SOAtest and DBeaver."
+  },
+  "experience": [
+    {
+      "role": { "es": "Especialista DevOps", "en": "DevOps Specialist" },
+      "org": "Technology Solutions Latam – BCI",
+      "period": { "es": "Ago – Oct 2026", "en": "Aug – Oct 2026" },
+      "bullets": {
+        "es": [
+          "Preparé datos virtualizados con DBeaver para pruebas en SOAtest (Parasoft), facilitando la validación de +30 casos de prueba.",
+          "Colaboré con equipos técnicos de BCI en la revisión pre-release de pipelines, manteniendo la bitácora de cada revisión.",
+          "Realicé ambientaciones Unix, modo desarrollo y MS para 7 entornos.",
+          "Resolución de problemas con GitHub Actions."
+        ],
+        "en": [
+          "Prepared virtualized data with DBeaver for SOAtest (Parasoft) testing, enabling validation of 30+ test cases.",
+          "Worked with BCI technical teams on pre-release pipeline reviews, keeping a log of each review.",
+          "Set up Unix, development-mode and MS environments across 7 environments.",
+          "Troubleshooting with GitHub Actions."
+        ]
+      }
+    },
+    {
+      "role": { "es": "Practicante DevOps", "en": "DevOps Intern" },
+      "org": "AFP Capital",
+      "period": { "es": "Ene – May 2026", "en": "Jan – May 2026" },
+      "bullets": {
+        "es": [
+          "Automatización de infraestructura: implementé y gestioné recursos en la nube con Terraform.",
+          "Pipeline Management (CI/CD): desarrollé y optimicé flujos de trabajo en GitHub Actions.",
+          "Optimicé costos en GCP, reduciendo el gasto en 15 %.",
+          "Gestión de tickets en ServiceNow."
+        ],
+        "en": [
+          "Infrastructure automation: implemented and managed cloud resources with Terraform.",
+          "Pipeline management (CI/CD): built and optimized GitHub Actions workflows.",
+          "Optimized GCP costs, reducing spend by 15%.",
+          "Ticket management in ServiceNow."
+        ]
+      }
+    },
+    {
+      "role": { "es": "Voluntaria", "en": "Volunteer" },
+      "org": "First Global Chile",
+      "period": { "es": "Ene – Feb 2025", "en": "Jan – Feb 2025" },
+      "bullets": {
+        "es": ["Mentoría a adolescentes en electrónica, programación y robótica básica.", "Capacitada para elegir al equipo representante de Chile para 2025."],
+        "en": ["Mentored teenagers in electronics, programming and basic robotics.", "Trained to select Chile's representative team for 2025."]
+      }
+    },
+    {
+      "role": { "es": "Páginas web comisionadas", "en": "Commissioned websites" },
+      "org": "Fiverr (freelance)",
+      "period": { "es": "2023 – 2024", "en": "2023 – 2024" },
+      "bullets": {
+        "es": ["Diseño UX/UI personalizado, llevando a la realidad las ideas de mis clientes.", "Desarrollo front-end y back-end según el pedido."],
+        "en": ["Custom UX/UI design, turning clients' ideas into real websites.", "Front-end and back-end development depending on the order."]
+      }
+    }
+  ],
+  "education": [
+    { "title": { "es": "Técnico Analista Programador", "en": "Programming Analyst Technician" }, "org": "INACAP", "period": "2024 – 2025" }
+  ],
+  "skills": {
+    "devops": ["Terraform", "Docker", "Kubernetes", "CI/CD", "Jenkins", "Git", "GitHub Actions", "Unix", "Scripting"],
+    "cloud": ["Google Cloud Platform", "VPC", "Artifact Registry", "Cloud Composer"],
+    "quality": ["Sonar", "SOAtest (Parasoft)", "DBeaver"],
+    "programming": ["Python", "Shell", "JavaScript", "Java", "HTML", "REST APIs", "Flask", "Django", "React"],
+    "tools": ["ServiceNow", "Active Directory", "Visual Studio Code", "Power BI", "Excel"]
+  },
+  "languages": [
+    { "name": { "es": "Español", "en": "Spanish" }, "level": { "es": "Nativo", "en": "Native" } },
+    { "name": { "es": "Inglés", "en": "English" }, "level": { "es": "Avanzado (B2) · IELTS", "en": "Advanced (B2) · IELTS" } },
+    { "name": { "es": "Portugués", "en": "Portuguese" }, "level": { "es": "Básico", "en": "Basic" } }
+  ],
+  "certifications": [
+    { "name": "Introduction to Generative AI", "org": "Google Cloud Skills Boost" },
+    { "name": "CS50: Introduction to Computer Science", "org": "Harvard" },
+    { "name": "IoT", "org": "Santander Open Academy" },
+    { "name": "Excel Intermedio", "org": "Santander Open Academy" },
+    { "name": "Primeros Auxilios", "org": "Mutual de Seguridad" },
+    { "name": "Desarrollador Full Stack", "org": "Universidad Tecnológica de Chile, INACAP" },
+    { "name": "Virtualize Essentials I y II", "org": "Parasoft Customer 360" }
+  ],
+  "ui": {
+    "es": {
+      "skip": "Saltar al contenido", "nav_home": "Inicio", "nav_about": "Sobre mí", "nav_experience": "Experiencia", "nav_skills": "Habilidades", "nav_education": "Formación", "nav_contact": "Contacto",
+      "greeting": "Hola, soy", "cta_contact": "Contáctame", "cta_linkedin": "LinkedIn",
+      "h_about": "Sobre mí", "h_experience": "Experiencia", "h_skills": "Habilidades", "h_education": "Formación, idiomas y certificaciones",
+      "h_studies": "Estudios", "h_languages": "Idiomas", "h_certs": "Certificaciones", "h_contact": "Contacto",
+      "g_devops": "DevOps e Infraestructura", "g_cloud": "Cloud", "g_quality": "Calidad y pruebas", "g_programming": "Programación", "g_tools": "Herramientas",
+      "contact_intro": "¿Tienes una oportunidad o un proyecto? Escríbeme y te respondo a la brevedad.",
+      "f_name": "Nombre", "f_email": "Correo electrónico", "f_message": "Mensaje", "f_send": "Enviar mensaje",
+      "ph_name": "Tu nombre", "ph_email": "tucorreo@email.com", "ph_message": "Cuéntame en qué puedo ayudarte…",
+      "privacy": "Usaré tu correo solo para responderte.",
+      "s_sending": "Enviando…", "s_ok": "¡Mensaje enviado! Te responderé pronto.",
+      "e_invalid": "Revisa los campos: nombre (2+ letras), correo válido y mensaje de al menos 10 caracteres.",
+      "e_rate_limited": "Enviaste demasiados mensajes. Inténtalo más tarde.",
+      "e_captcha_failed": "No pudimos verificar que eres humano. Recarga e inténtalo de nuevo.",
+      "e_mail_failed": "Recibí tu mensaje pero falló el envío del correo. Escríbeme directamente a mi email.",
+      "e_network": "Sin conexión con el servidor. Inténtalo de nuevo.", "e_generic": "Ocurrió un error. Inténtalo de nuevo.",
+      "aria_menu": "Abrir menú", "aria_theme": "Cambiar tema claro/oscuro", "aria_lang": "Cambiar idioma", "lang_btn": "EN",
+      "meta_desc": "Portafolio de Tania Vilches Fuentes: DevOps y Analista Programadora en Santiago, Chile. Terraform, GCP, CI/CD y GitHub Actions."
+    },
+    "en": {
+      "skip": "Skip to content", "nav_home": "Home", "nav_about": "About", "nav_experience": "Experience", "nav_skills": "Skills", "nav_education": "Education", "nav_contact": "Contact",
+      "greeting": "Hi, I'm", "cta_contact": "Get in touch", "cta_linkedin": "LinkedIn",
+      "h_about": "About me", "h_experience": "Experience", "h_skills": "Skills", "h_education": "Education, languages & certifications",
+      "h_studies": "Studies", "h_languages": "Languages", "h_certs": "Certifications", "h_contact": "Contact",
+      "g_devops": "DevOps & Infrastructure", "g_cloud": "Cloud", "g_quality": "Quality & testing", "g_programming": "Programming", "g_tools": "Tools",
+      "contact_intro": "Have an opportunity or a project? Write to me and I'll get back to you soon.",
+      "f_name": "Name", "f_email": "Email", "f_message": "Message", "f_send": "Send message",
+      "ph_name": "Your name", "ph_email": "youremail@email.com", "ph_message": "Tell me how I can help…",
+      "privacy": "I'll only use your email to reply to you.",
+      "s_sending": "Sending…", "s_ok": "Message sent! I'll reply soon.",
+      "e_invalid": "Check the fields: name (2+ characters), a valid email and a message of at least 10 characters.",
+      "e_rate_limited": "You sent too many messages. Please try again later.",
+      "e_captcha_failed": "We couldn't verify you're human. Reload and try again.",
+      "e_mail_failed": "I received your message but the email delivery failed. Please email me directly.",
+      "e_network": "Can't reach the server. Please try again.", "e_generic": "Something went wrong. Please try again.",
+      "aria_menu": "Open menu", "aria_theme": "Toggle light/dark theme", "aria_lang": "Change language", "lang_btn": "ES",
+      "meta_desc": "Portfolio of Tania Vilches Fuentes: DevOps and Software Developer in Santiago, Chile. Terraform, GCP, CI/CD and GitHub Actions."
+    }
+  }
+}

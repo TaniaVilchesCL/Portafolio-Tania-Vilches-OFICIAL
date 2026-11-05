@@ -1,0 +1,7 @@
+# Copia a .dev.vars para desarrollo local (no se sube a GitHub)
+RESEND_API_KEY=
+MAIL_TO=tu_correo@ejemplo.com
+MAIL_FROM=Portafolio <onboarding@resend.dev>
+TURNSTILE_SECRET=
+IP_SALT=cambia-esto-por-un-valor-aleatorio
+ALLOWED_ORIGIN=

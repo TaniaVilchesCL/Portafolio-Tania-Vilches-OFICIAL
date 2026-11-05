@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tania Vilches Fuentes · DevOps | Analista Programadora</title>
+  <meta name="description" content="Portafolio de Tania Vilches Fuentes: DevOps y Analista Programadora en Santiago, Chile. Terraform, GCP, CI/CD y GitHub Actions.">
+  <meta property="og:title" content="Tania Vilches Fuentes · DevOps | Analista Programadora">
+  <meta property="og:description" content="DevOps y Analista Programadora. Terraform, GCP, CI/CD y GitHub Actions.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0f0f14">
+  <!-- Pega aquí tu Site Key de Cloudflare Turnstile (es pública). Vacío = captcha desactivado. -->
+  <meta name="turnstile-sitekey" content="">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="#home">TV</a>
+    <button class="icon-btn menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav" data-i18n-aria="aria_menu" aria-label="Abrir menú">☰</button>
+    <nav id="nav" aria-label="Principal">
+      <a href="#about" data-i18n="nav_about">Sobre mí</a>
+      <a href="#experience" data-i18n="nav_experience">Experiencia</a>
+      <a href="#skills" data-i18n="nav_skills">Habilidades</a>
+      <a href="#education" data-i18n="nav_education">Formación</a>
+      <a href="#contact" data-i18n="nav_contact">Contacto</a>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" id="theme-btn" data-i18n-aria="aria_theme" aria-label="Cambiar tema">◐</button>
+      <button class="icon-btn" id="lang-btn" data-i18n-aria="aria_lang" aria-label="Cambiar idioma">EN</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow"><span data-i18n="greeting">Hola, soy</span></p>
+        <h1>Tania Vilches Fuentes</h1>
+        <p class="role" id="role">DevOps | Analista Programadora</p>
+        <div class="cta">
+          <a class="btn" href="#contact" data-i18n="cta_contact">Contáctame</a>
+          <a class="btn ghost" id="linkedin" href="#" target="_blank" rel="noopener noreferrer" data-i18n="cta_linkedin">LinkedIn</a>
+          <a class="btn ghost" id="github" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <img class="avatar" src="/img/tania.jpg" width="320" height="320" alt="Tania Vilches Fuentes" fetchpriority="high">
+    </section>
+
+    <section id="about" class="reveal"><h2 data-i18n="h_about">Sobre mí</h2><p class="lead" id="summary"></p></section>
+    <section id="experience" class="reveal"><h2 data-i18n="h_experience">Experiencia</h2><div class="timeline" id="timeline"></div></section>
+    <section id="skills" class="reveal"><h2 data-i18n="h_skills">Habilidades</h2><div class="grid" id="skills-grid"></div></section>
+    <section id="education" class="reveal">
+      <h2 data-i18n="h_education">Formación, idiomas y certificaciones</h2>
+      <div class="grid two">
+        <div class="card"><h3 data-i18n="h_studies">Estudios</h3><div id="studies"></div><h3 class="sub" data-i18n="h_languages">Idiomas</h3><ul class="plain" id="languages"></ul></div>
+        <div class="card"><h3 data-i18n="h_certs">Certificaciones</h3><ul class="plain" id="certs"></ul></div>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2 data-i18n="h_contact">Contacto</h2>
+      <p class="lead" data-i18n="contact_intro"></p>
+      <form id="contact-form" class="card form" novalidate>
+        <label for="name" data-i18n="f_name">Nombre</label>
+        <input id="name" name="name" type="text" autocomplete="name" minlength="2" maxlength="80" required data-i18n-ph="ph_name">
+        <label for="email" data-i18n="f_email">Correo electrónico</label>
+        <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required data-i18n-ph="ph_email">
+        <label for="message" data-i18n="f_message">Mensaje</label>
+        <textarea id="message" name="message" rows="6" minlength="10" maxlength="2000" required data-i18n-ph="ph_message"></textarea>
+        <div class="hp" aria-hidden="true"><label>Website <input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+        <div id="turnstile"></div>
+        <p class="hint" data-i18n="privacy"></p>
+        <button class="btn" type="submit" id="send" data-i18n="f_send">Enviar mensaje</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">© 2026 Tania Vilches Fuentes · Santiago, Chile</footer>
+</body>
+</html>
